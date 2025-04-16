@@ -295,7 +295,7 @@ pub fn rig_tool(args: TokenStream, input: TokenStream) -> TokenStream {
         #input_fn
 
         #[derive(Default)]
-        pub(crate) struct #struct_name;
+        pub struct #struct_name;
 
         impl rig::tool::Tool for #struct_name {
             const NAME: &'static str = #fn_name_str;
